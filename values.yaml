@@ -1,0 +1,21 @@
+prometheus:
+  service:
+    type: LoadBalancer
+alertmanager:
+  service:
+    type: LoadBalancer
+grafana:
+  # Admin user password
+  adminPassword: "password"
+  defaultDashboardsTimezone: Asia/Tokyo
+  service:
+    type: LoadBalancer
+kubeApiServer:
+  enabled: true
+kubeControllerManager:
+  enabled: false
+kubeScheduler:
+  enabled: false
+kubeProxy:
+  enabled: false
+kubeEtcd:
